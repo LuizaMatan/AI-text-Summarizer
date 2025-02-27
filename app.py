@@ -6,7 +6,7 @@ import torch
 @st.cache_resource
 def load_summarizer():
     device = "mps" if torch.backends.mps.is_available() else "cpu"
-    return pipeline("summarization", model="facebook/bart-large-cnn", device=-1)  # Force CPU
+    return pipeline("summarization", model="facebook/bart-large-cnn", device=-1)  
 
 summarizer = load_summarizer()
 
