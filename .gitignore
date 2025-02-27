@@ -1,0 +1,9 @@
+# Ignore cache and model downloads
+__pycache__/
+*.pyc
+*.pyo
+*.db
+.DS_Store
+
+# Streamlit cache
+.streamlit/
